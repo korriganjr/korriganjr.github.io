@@ -2,24 +2,24 @@
 layout: about
 title: about
 permalink: /
-subtitle: Технический писатель
+subtitle: Технический писатель, копирайтер, рерайтер, руководитель команды переводчиков, устный и письменный переводчик, редактор, корректор (английский – русский, русский – английский)
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: photo.png
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Краснодар</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+* умею грамотно писать на русском и английском языках с учетом конкретных требований к стилю изложения (включая инфостиль), целевой аудитории и специфики контекста;
+* знаю, как применять подход Docs as Code: единый источник информации в репозитории + языки разметки + генераторы статических сайтов;
+* имею опыт работы в Confluence;
+* умею работать с Linux и Linux Server, Docker, git, GitHub и GitHub Actions, системами виртуализации;
+* в целом технически подкован и имею обширное представление о современных системах автоматизированного перевода и вспомогательных инструментах для переводчиков, редакторов, корректоров и других специалистов, связанных с лингвистическими процессами;
+* готов к командировкам по России и за рубежом;
+* свободно владею устным и письменным английским языком.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
