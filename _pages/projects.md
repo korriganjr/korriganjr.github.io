@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Портфолио
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Примеры работ
 nav: true
 nav_order: 2
-display_categories: [work, fun]
+display_categories: [на русском, на английском]
 horizontal: false
 ---
 

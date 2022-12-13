@@ -13,7 +13,8 @@ footer_text: >
   Размещено на <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
 keywords: # add your own keywords or leave empty
 
-lang: ru, en # the language of your site (for example: en, fr, cn, ru, etc.)
+lang: ru # the language of your site (for example: en, fr, cn, ru, etc.)
+languages: ["ru", "en"] 
 icon: ✍🏻 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://korriganjr.github.io # the base hostname & protocol for your site

@@ -1,7 +1,7 @@
 ---
 layout: cv
 permalink: /cv/
-title: резюме
+title: Резюме
 nav: true
-nav_order: 4
+nav_order: 2
 ---
