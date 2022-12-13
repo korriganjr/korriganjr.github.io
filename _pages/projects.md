@@ -2,7 +2,7 @@
 layout: page
 title: Портфолио
 permalink: /projects/
-description: Примеры работ
+description: Примеры работ на русском и английском языках
 nav: true
 nav_order: 2
 display_categories: [на русском, на английском]
