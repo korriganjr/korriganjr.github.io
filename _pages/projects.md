@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Портфолио
+title: Портфолио (в разработке)
 permalink: /projects/
 description: Примеры работ на русском и английском языках
 nav: true
