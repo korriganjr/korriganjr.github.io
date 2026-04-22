@@ -1,0 +1,26 @@
+---
+import LandingLayout from '@/layouts/LandingLayout.astro';
+import { getTranslations } from '@/i18n';
+import Hero from '@/components/landing/Hero.astro';
+import Timeline from '@/components/landing/Timeline.astro';
+import WhatIDo from '@/components/landing/WhatIDo.astro';
+import Tools from '@/components/landing/Tools.astro';
+import Projects from '@/components/landing/Projects.astro';
+import Contact from '@/components/landing/Contact.astro';
+
+const locale = 'ru';
+const t = getTranslations(locale);
+---
+
+<LandingLayout
+  title={t.meta.title}
+  description={t.meta.description}
+  locale={locale}
+>
+  <Hero t={t} />
+  <Timeline t={t} />
+  <WhatIDo t={t} />
+  <Tools t={t} />
+  <Projects t={t} />
+  <Contact t={t} />
+</LandingLayout>

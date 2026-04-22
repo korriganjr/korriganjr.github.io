@@ -1,0 +1,76 @@
+---
+interface Props {
+  t: any;
+}
+const { t } = Astro.props;
+---
+
+<section class="bg-secondary/30 py-20 lg:py-28" id="tools">
+  <div class="mx-auto max-w-4xl px-6">
+    <h2 class="font-display mb-16 text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+      {t.tools.heading}
+    </h2>
+
+    <!-- Primary tools -->
+    <div class="mb-12 flex flex-wrap justify-center gap-4">
+      {t.tools.primary.map((tool: string) => (
+        <span class="rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold text-foreground shadow-sm">
+          {tool}
+        </span>
+      ))}
+    </div>
+
+    <!-- Expandable full toolkit -->
+    <div class="text-center">
+      <button
+        id="toolkit-toggle"
+        class="inline-flex items-center gap-2 text-sm font-medium text-brand-500 hover:text-brand-600 transition-colors"
+        aria-expanded="false"
+        aria-controls="full-toolkit"
+      >
+        <span class="toggle-label">{t.tools.showAll}</span>
+        <svg class="toggle-icon h-4 w-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+
+    <div id="full-toolkit" class="mt-8 hidden" data-show-label={t.tools.showAll} data-hide-label={t.tools.hideAll}>
+      <div class="grid gap-6 sm:grid-cols-2">
+        {t.tools.categories.map((cat: any) => (
+          <div class="rounded-xl border border-border bg-background p-5">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wider text-foreground-muted">{cat.name}</h3>
+            <div class="flex flex-wrap gap-2">
+              {cat.items.map((item: string) => (
+                <span class="rounded-md bg-secondary px-3 py-1 text-sm text-foreground">{item}</span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function initToolkitToggle() {
+    const btn = document.getElementById('toolkit-toggle');
+    const panel = document.getElementById('full-toolkit');
+    if (!btn || !panel) return;
+
+    const labelEl = btn.querySelector('.toggle-label');
+    const iconEl = btn.querySelector('.toggle-icon');
+    const showLabel = panel.dataset.showLabel || 'Show';
+    const hideLabel = panel.dataset.hideLabel || 'Hide';
+
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      panel.classList.toggle('hidden');
+      if (labelEl) labelEl.textContent = expanded ? showLabel : hideLabel;
+      if (iconEl) iconEl.classList.toggle('rotate-180');
+    });
+  }
+  initToolkitToggle();
+  document.addEventListener('astro:page-load', initToolkitToggle);
+</script>

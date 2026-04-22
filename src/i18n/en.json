@@ -1,0 +1,200 @@
+{
+  "lang": "en",
+  "meta": {
+    "title": "Vladimir Koryagin | Technical Writer & Project Support",
+    "description": "Documentation, grants, video, and dev support for tech companies."
+  },
+  "nav": {
+    "story": "My Story",
+    "skills": "What I Do",
+    "tools": "Tools",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Vladimir Koryagin",
+    "subtitle": "Technical Writer & Project Support",
+    "description": "I take care of documentation, grant applications, investor decks, video production, and other non-code tasks so your dev team can focus on building. Open to part-time and project-based work.",
+    "cta": "Write on Telegram"
+  },
+  "story": {
+    "heading": "My Story",
+    "milestones": [
+      {
+        "year": "2005",
+        "title": "Translator",
+        "location": "Ivanovo",
+        "description": "Graduated in philology. Started out translating technical, legal, and marketing texts between Russian and English."
+      },
+      {
+        "year": "2010",
+        "title": "Interpreter at Wimm-Bill-Dann & McKinsey",
+        "location": "Moscow",
+        "description": "Moved to Moscow. Did simultaneous and consecutive interpreting at board meetings, investor visits, and consulting sessions."
+      },
+      {
+        "year": "2012",
+        "title": "Team Lead & Senior Translator",
+        "location": "Moscow, Krasnodar",
+        "description": "Ran a translation team for 10+ years. McKinsey was the main client. Wrote 700-page research reports, maintained glossaries, brought in cloud translation tools."
+      },
+      {
+        "year": "2023",
+        "title": "Dev Support at PointGroup",
+        "location": "Remote (web3)",
+        "description": "Switched to tech. Now I write docs, build VitePress and Gitbook sites, prepare grant applications, and record demo videos for a Swiss web3 company."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "What I Do",
+    "lead": "Everything a dev company needs besides writing code",
+    "items": [
+      {
+        "icon": "file-text",
+        "title": "Technical Documentation",
+        "description": "I write and maintain docs, then deploy them with VitePress, Gitbook, or other static site generators."
+      },
+      {
+        "icon": "award",
+        "title": "Grant Applications",
+        "description": "Finding Web3 funds, preparing the paperwork, talking to foundations, keeping track of deadlines."
+      },
+      {
+        "icon": "presentation",
+        "title": "Investor Materials",
+        "description": "Pitch decks, one-pagers, project blurbs, investor letters."
+      },
+      {
+        "icon": "git-branch",
+        "title": "Technical Diagrams",
+        "description": "Architecture diagrams, flowcharts, and other visuals that explain how things work."
+      },
+      {
+        "icon": "video",
+        "title": "Video Production",
+        "description": "Tutorials, grant demos, product walkthroughs. I handle recording, editing, and publishing."
+      },
+      {
+        "icon": "pen-tool",
+        "title": "Blog & Social Media",
+        "description": "Posts for company blogs, Twitter/X threads, community channels."
+      },
+      {
+        "icon": "smartphone",
+        "title": "App Store Management",
+        "description": "Google Play listings: descriptions, screenshots, metadata, updates."
+      },
+      {
+        "icon": "layout",
+        "title": "CRM & Task Trackers",
+        "description": "I set up Notion workspaces, configure Jira boards, and keep them organized."
+      },
+      {
+        "icon": "code",
+        "title": "Prototyping & Low-Code",
+        "description": "Landing pages, internal tools, quick prototypes. Astro, Tailwind, that kind of stack."
+      }
+    ]
+  },
+  "tools": {
+    "heading": "Tools I Use",
+    "primary": ["Claude Code", "Notion", "VitePress", "Figma", "Git", "VS Code"],
+    "showAll": "Show full toolkit",
+    "hideAll": "Hide full toolkit",
+    "categories": [
+      {
+        "name": "AI Coding",
+        "items": ["Claude Code"]
+      },
+      {
+        "name": "AI General",
+        "items": ["ChatGPT", "Gemini"]
+      },
+      {
+        "name": "AI Graphics",
+        "items": ["Nano Banana"]
+      },
+      {
+        "name": "AI Video",
+        "items": ["Veo", "Sora"]
+      },
+      {
+        "name": "Graphics",
+        "items": ["Figma", "Photoshop", "Draw.io", "Mermaid"]
+      },
+      {
+        "name": "Video",
+        "items": ["Vegas Pro", "OBS Studio"]
+      },
+      {
+        "name": "Audio",
+        "items": ["Audacity", "Ableton"]
+      },
+      {
+        "name": "SSG & Frameworks",
+        "items": ["VitePress", "Sphinx", "Jekyll", "YFM Builder", "Astro + Tailwind"]
+      },
+      {
+        "name": "General Tech",
+        "items": ["Git", "GitHub", "VS Code", "Linux / Linux Server", "Docker", "VMs (VirtualBox)"]
+      },
+      {
+        "name": "Trackers & Knowledge Bases",
+        "items": ["Notion", "Jira", "Confluence"]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Projects",
+    "items": [
+      {
+        "title": "JPool Documentation",
+        "description": "Docs for JPool liquid staking on Solana. Built with VitePress.",
+        "url": "https://docs.jpool.one",
+        "tag": "VitePress"
+      },
+      {
+        "title": "Alula Finance Docs",
+        "description": "Documentation for the Alula Finance DeFi protocol.",
+        "url": "https://docs.alula.finance",
+        "tag": "VitePress"
+      },
+      {
+        "title": "SVT Documentation",
+        "description": "Developer docs for SVT blockchain infrastructure.",
+        "url": "https://docs.svt.one",
+        "tag": "Gitbook"
+      },
+      {
+        "title": "Videos",
+        "description": "Tutorial videos, and product walkthroughs.",
+        "url": "https://www.youtube.com/@jpoolsolana",
+        "tag": "Video"
+      },
+      {
+        "title": "This Website",
+        "description": "Personal portfolio built with Astro and Tailwind CSS.",
+        "url": "https://korriganjr.github.io",
+        "tag": "Astro"
+      },
+      {
+        "title": "Solana Campus",
+        "description": "Educational platform for the Solana ecosystem.",
+        "url": "https://campus.jpool.one",
+        "tag": "Education"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Get in Touch",
+    "description": "Open to part-time and project-based work. Pick any channel.",
+    "email": "vladimir.koryagin7@gmail.com",
+    "telegram": "@korrigan_jr",
+    "telegramUrl": "https://t.me/korrigan_jr",
+    "linkedin": "vladimir-koryagin-223a5351",
+    "linkedinUrl": "https://linkedin.com/in/vladimir-koryagin-223a5351",
+    "github": "korriganjr",
+    "githubUrl": "https://github.com/korriganjr"
+  }
+}

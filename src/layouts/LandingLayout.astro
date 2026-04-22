@@ -1,0 +1,68 @@
+---
+/**
+ * LandingLayout
+ * Layout wrapper for the personal portfolio landing page
+ */
+import BaseLayout from './BaseLayout.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import LanguageSwitcher from '@/components/LanguageSwitcher.astro';
+import ThemeToggle from '@/components/layout/ThemeToggle.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
+  nofollow?: boolean;
+  includeOrgSchema?: boolean;
+  locale?: string;
+}
+
+const {
+  title,
+  description,
+  image,
+  imageAlt,
+  noindex = false,
+  nofollow = false,
+  includeOrgSchema = false,
+  locale = 'en',
+} = Astro.props;
+
+const prefix = locale === 'ru' ? '/ru' : '';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  imageAlt={imageAlt}
+  noindex={noindex}
+  nofollow={nofollow}
+  includeOrgSchema={includeOrgSchema}
+>
+  <Header
+    slot="header"
+    position="sticky"
+    size="md"
+    logoText="VK"
+    nav={[
+      { label: locale === 'ru' ? 'Обо мне' : 'My Story', href: `${prefix}#story` },
+      { label: locale === 'ru' ? 'Навыки' : 'Skills', href: `${prefix}#skills` },
+      { label: locale === 'ru' ? 'Инструменты' : 'Tools', href: `${prefix}#tools` },
+      { label: locale === 'ru' ? 'Проекты' : 'Projects', href: `${prefix}#projects` },
+      { label: locale === 'ru' ? 'Контакты' : 'Contact', href: `${prefix}#contact` },
+    ]}
+  >
+    <Fragment slot="actions">
+      <ThemeToggle />
+      <LanguageSwitcher currentLocale={locale} />
+    </Fragment>
+  </Header>
+
+  <slot />
+
+  <Footer slot="footer" layout="minimal" background="secondary" nav={[]} />
+</BaseLayout>

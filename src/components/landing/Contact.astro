@@ -1,0 +1,80 @@
+---
+import Icon from '@/components/ui/primitives/Icon/Icon.astro';
+import Button from '@/components/ui/form/Button/Button.astro';
+
+interface Props {
+  t: any;
+}
+const { t } = Astro.props;
+---
+
+<section class="bg-secondary/30 py-20 lg:py-28" id="contact">
+  <div class="mx-auto max-w-2xl px-6 text-center">
+    <h2 class="font-display mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+      {t.contact.heading}
+    </h2>
+    <p class="mb-12 text-lg text-foreground-muted">
+      {t.contact.description}
+    </p>
+
+    <div class="grid gap-4 sm:grid-cols-2">
+      <a
+        href={`mailto:${t.contact.email}`}
+        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+      >
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
+          <Icon name="mail" size="md" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-medium text-foreground-muted">Email</p>
+          <p class="text-sm font-semibold text-foreground">{t.contact.email}</p>
+        </div>
+      </a>
+
+      <a
+        href={t.contact.telegramUrl}
+        target="_blank"
+        rel="noopener"
+        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+      >
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
+          <Icon name="send" size="md" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-medium text-foreground-muted">Telegram</p>
+          <p class="text-sm font-semibold text-foreground">{t.contact.telegram}</p>
+        </div>
+      </a>
+
+      <a
+        href={t.contact.linkedinUrl}
+        target="_blank"
+        rel="noopener"
+        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+      >
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
+          <Icon name="linkedin" size="md" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-medium text-foreground-muted">LinkedIn</p>
+          <p class="text-sm font-semibold text-foreground">{t.contact.linkedin}</p>
+        </div>
+      </a>
+
+      <a
+        href={t.contact.githubUrl}
+        target="_blank"
+        rel="noopener"
+        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+      >
+        <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
+          <Icon name="github" size="md" />
+        </div>
+        <div class="text-left">
+          <p class="text-xs font-medium text-foreground-muted">GitHub</p>
+          <p class="text-sm font-semibold text-foreground">{t.contact.github}</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

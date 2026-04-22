@@ -1,0 +1,200 @@
+{
+  "lang": "ru",
+  "meta": {
+    "title": "Владимир Корягин | Технический писатель и проектная поддержка",
+    "description": "Документация, гранты, видео и поддержка разработки для ИТ-компаний."
+  },
+  "nav": {
+    "story": "Обо мне",
+    "skills": "Чем я занимаюсь",
+    "tools": "Инструменты",
+    "projects": "Проекты",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "name": "Владимир Корягин",
+    "subtitle": "Технический писатель и проектная поддержка",
+    "description": "Беру на себя документацию, грантовые заявки, презентации для инвесторов, видео и другие задачи, не связанные с кодом, чтобы команда разработки занималась разработкой. Открыт для работы на частичную занятость и проектной основе.",
+    "cta": "Написать в Telegram"
+  },
+  "story": {
+    "heading": "Обо мне",
+    "milestones": [
+      {
+        "year": "2005",
+        "title": "Переводчик",
+        "location": "Иваново",
+        "description": "Окончил филфак. Начал карьеру с перевода технических, юридических и маркетинговых текстов на русском и английском."
+      },
+      {
+        "year": "2010",
+        "title": "Переводчик в «Вимм-Билль-Данн» и McKinsey",
+        "location": "Москва",
+        "description": "Переехал в Москву. Синхронный и последовательный перевод на заседаниях совета директоров, встречах с инвесторами, консалтинговых сессиях."
+      },
+      {
+        "year": "2012",
+        "title": "Руководитель команды переводчиков",
+        "location": "Москва, Краснодар",
+        "description": "Руководил командой переводчиков больше 10 лет. Основной клиент McKinsey. Писал отчеты на 700+ страниц, вел глоссарии, внедрял облачные инструменты перевода."
+      },
+      {
+        "year": "2023",
+        "title": "Dev Support в PointGroup",
+        "location": "Удаленно (web3)",
+        "description": "Перешел в ИТ. Пишу документацию, собираю сайты на VitePress и Gitbook, готовлю грантовые заявки и записываю демо-видео для швейцарской web3-компании."
+      }
+    ]
+  },
+  "skills": {
+    "heading": "Чем я занимаюсь",
+    "lead": "Все, что нужно компании-разработчику, кроме написания кода",
+    "items": [
+      {
+        "icon": "file-text",
+        "title": "Техническая документация",
+        "description": "Пишу и поддерживаю доки, деплою через VitePress, Gitbook и другие генераторы статических сайтов."
+      },
+      {
+        "icon": "award",
+        "title": "Грантовые заявки",
+        "description": "Поиск фондов Web3, подготовка документов, переписка с фондами, контроль дедлайнов."
+      },
+      {
+        "icon": "presentation",
+        "title": "Материалы для инвесторов",
+        "description": "Питч-деки, one-pagers, описания проектов, письма инвесторам."
+      },
+      {
+        "icon": "git-branch",
+        "title": "Технические диаграммы",
+        "description": "Архитектурные диаграммы, блок-схемы и другие визуалы, которые объясняют, как все устроено."
+      },
+      {
+        "icon": "video",
+        "title": "Видеопроизводство",
+        "description": "Туториалы, демо для грантов, обзоры продуктов. Запись, монтаж, публикация."
+      },
+      {
+        "icon": "pen-tool",
+        "title": "Блог и соцсети",
+        "description": "Посты для корпоративных блогов, треды в Twitter/X, контент для каналов сообщества."
+      },
+      {
+        "icon": "smartphone",
+        "title": "Управление App Store",
+        "description": "Листинги Google Play: описания, скриншоты, метаданные, обновления."
+      },
+      {
+        "icon": "layout",
+        "title": "CRM и трекеры задач",
+        "description": "Настраиваю рабочие пространства Notion, конфигурирую доски Jira, поддерживаю порядок."
+      },
+      {
+        "icon": "code",
+        "title": "Прототипирование и low-code",
+        "description": "Лендинги, внутренние инструменты, быстрые прототипы. Astro, Tailwind и подобный стек."
+      }
+    ]
+  },
+  "tools": {
+    "heading": "Инструменты",
+    "primary": ["Claude Code", "Notion", "VitePress", "Figma", "Git", "VS Code"],
+    "showAll": "Показать все инструменты",
+    "hideAll": "Скрыть инструменты",
+    "categories": [
+      {
+        "name": "AI для кода",
+        "items": ["Claude Code"]
+      },
+      {
+        "name": "AI общего назначения",
+        "items": ["ChatGPT", "Gemini"]
+      },
+      {
+        "name": "AI-графика",
+        "items": ["Nano Banana"]
+      },
+      {
+        "name": "AI-видео",
+        "items": ["Veo", "Sora"]
+      },
+      {
+        "name": "Графика",
+        "items": ["Figma", "Photoshop", "Draw.io", "Mermaid"]
+      },
+      {
+        "name": "Видео",
+        "items": ["Vegas Pro", "OBS Studio"]
+      },
+      {
+        "name": "Аудио",
+        "items": ["Audacity", "Ableton"]
+      },
+      {
+        "name": "SSG и фреймворки",
+        "items": ["VitePress", "Sphinx", "Jekyll", "YFM Builder", "Astro + Tailwind"]
+      },
+      {
+        "name": "Общие технологии",
+        "items": ["Git", "GitHub", "VS Code", "Linux / Linux Server", "Docker", "ВМ (VirtualBox)"]
+      },
+      {
+        "name": "Трекеры и базы знаний",
+        "items": ["Notion", "Jira", "Confluence"]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Проекты",
+    "items": [
+      {
+        "title": "Документация JPool",
+        "description": "Документация для ликвидного стейкинга JPool на Solana. Собрано на VitePress.",
+        "url": "https://docs.jpool.one",
+        "tag": "VitePress"
+      },
+      {
+        "title": "Документация Alula Finance",
+        "description": "Документация для DeFi-протокола Alula Finance.",
+        "url": "https://docs.alula.finance",
+        "tag": "VitePress"
+      },
+      {
+        "title": "Документация SVT",
+        "description": "Документация для блокчейн-инфраструктуры SVT.",
+        "url": "https://docs.svt.one",
+        "tag": "Gitbook"
+      },
+      {
+        "title": "Видео",
+        "description": "Обучающие видео, и обзоры продуктов.",
+        "url": "https://www.youtube.com/@jpoolsolana",
+        "tag": "Видео"
+      },
+      {
+        "title": "Этот сайт",
+        "description": "Персональное портфолио на Astro и Tailwind CSS.",
+        "url": "https://korriganjr.github.io",
+        "tag": "Astro"
+      },
+      {
+        "title": "Solana Campus",
+        "description": "Образовательная платформа для экосистемы Solana.",
+        "url": "https://campus.jpool.one",
+        "tag": "Образование"
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Связаться",
+    "description": "Открыт для работы на частичную занятость и проектной основе. Выбирайте любой канал.",
+    "email": "vladimir.koryagin7@gmail.com",
+    "telegram": "@korrigan_jr",
+    "telegramUrl": "https://t.me/korrigan_jr",
+    "linkedin": "vladimir-koryagin-223a5351",
+    "linkedinUrl": "https://linkedin.com/in/vladimir-koryagin-223a5351",
+    "github": "korriganjr",
+    "githubUrl": "https://github.com/korriganjr"
+  }
+}

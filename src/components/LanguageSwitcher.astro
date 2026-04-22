@@ -1,0 +1,32 @@
+---
+interface Props {
+  currentLocale: string;
+}
+const { currentLocale } = Astro.props;
+---
+
+<div class="flex items-center gap-1 text-sm font-medium">
+  <a
+    href="/"
+    class:list={[
+      'rounded px-2 py-1 transition-colors',
+      currentLocale === 'en'
+        ? 'bg-brand-500 text-white'
+        : 'text-foreground-muted hover:text-foreground hover:bg-secondary',
+    ]}
+  >
+    EN
+  </a>
+  <span class="text-foreground-muted">/</span>
+  <a
+    href="/ru"
+    class:list={[
+      'rounded px-2 py-1 transition-colors',
+      currentLocale === 'ru'
+        ? 'bg-brand-500 text-white'
+        : 'text-foreground-muted hover:text-foreground hover:bg-secondary',
+    ]}
+  >
+    RU
+  </a>
+</div>
