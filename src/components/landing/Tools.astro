@@ -7,12 +7,12 @@ const { t } = Astro.props;
 
 <section class="bg-secondary/30 py-20 lg:py-28" id="tools">
   <div class="mx-auto max-w-4xl px-6">
-    <h2 class="font-display mb-16 text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+    <h2 class="reveal font-display mb-16 text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
       {t.tools.heading}
     </h2>
 
     <!-- Primary tools -->
-    <div class="mb-12 flex flex-wrap justify-center gap-4">
+    <div class="reveal mb-12 flex flex-wrap justify-center gap-4">
       {t.tools.primary.map((tool: string) => (
         <span class="rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold text-foreground shadow-sm">
           {tool}

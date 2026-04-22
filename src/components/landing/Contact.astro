@@ -10,17 +10,17 @@ const { t } = Astro.props;
 
 <section class="bg-secondary/30 py-20 lg:py-28" id="contact">
   <div class="mx-auto max-w-2xl px-6 text-center">
-    <h2 class="font-display mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+    <h2 class="reveal font-display mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
       {t.contact.heading}
     </h2>
-    <p class="mb-12 text-lg text-foreground-muted">
+    <p class="reveal mb-12 text-lg text-foreground-muted">
       {t.contact.description}
     </p>
 
     <div class="grid gap-4 sm:grid-cols-2">
       <a
         href={`mailto:${t.contact.email}`}
-        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+        class="reveal reveal-delay-1 flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-brand-500/50"
       >
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
           <Icon name="mail" size="md" />
@@ -35,7 +35,7 @@ const { t } = Astro.props;
         href={t.contact.telegramUrl}
         target="_blank"
         rel="noopener"
-        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+        class="reveal reveal-delay-2 flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-brand-500/50"
       >
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
           <Icon name="send" size="md" />
@@ -50,7 +50,7 @@ const { t } = Astro.props;
         href={t.contact.linkedinUrl}
         target="_blank"
         rel="noopener"
-        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+        class="reveal reveal-delay-3 flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-brand-500/50"
       >
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
           <Icon name="linkedin" size="md" />
@@ -65,7 +65,7 @@ const { t } = Astro.props;
         href={t.contact.githubUrl}
         target="_blank"
         rel="noopener"
-        class="flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all hover:shadow-md hover:border-brand-500/50"
+        class="reveal reveal-delay-4 flex items-center gap-3 rounded-xl border border-border bg-background p-4 transition-all duration-300 hover:shadow-md hover:-translate-y-1 hover:border-brand-500/50"
       >
         <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-brand-500/10 text-brand-500">
           <Icon name="github" size="md" />

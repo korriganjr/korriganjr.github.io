@@ -24,25 +24,69 @@
         "year": "2005",
         "title": "Translator",
         "location": "Ivanovo",
-        "description": "Graduated in philology. Started out translating technical, legal, and marketing texts between Russian and English."
+        "description": "Graduated in philology. Started out translating technical, legal, and marketing texts between Russian and English.",
+        "details": {
+          "company": "Freelance / Local agencies",
+          "period": "2005 – 2010",
+          "bullets": [
+            "Translated technical manuals, legal contracts, and marketing copy (RU ↔ EN)",
+            "Worked with local and international clients across industries",
+            "Built domain expertise in legal and technical terminology"
+          ]
+        }
       },
       {
         "year": "2010",
         "title": "Interpreter at Wimm-Bill-Dann & McKinsey",
         "location": "Moscow",
-        "description": "Moved to Moscow. Did simultaneous and consecutive interpreting at board meetings, investor visits, and consulting sessions."
+        "description": "Moved to Moscow. Did simultaneous and consecutive interpreting at board meetings, investor visits, and consulting sessions.",
+        "details": {
+          "company": "Wimm-Bill-Dann / PepsiCo, McKinsey & Company",
+          "period": "2010 – 2012",
+          "bullets": [
+            "Simultaneous and consecutive interpreting at C-level meetings",
+            "Board meetings, investor visits, and consulting workshops",
+            "Worked on-site at Wimm-Bill-Dann during PepsiCo acquisition",
+            "Interpreted for McKinsey consulting teams in client engagements"
+          ]
+        }
       },
       {
         "year": "2012",
         "title": "Team Lead & Senior Translator",
         "location": "Moscow, Krasnodar",
-        "description": "Ran a translation team for 10+ years. McKinsey was the main client. Wrote 700-page research reports, maintained glossaries, brought in cloud translation tools."
+        "description": "Ran a translation team for 10+ years. McKinsey was the main client. Wrote 700-page research reports, maintained glossaries, brought in cloud translation tools.",
+        "details": {
+          "company": "Janus Translation Bureau",
+          "period": "2012 – 2023",
+          "bullets": [
+            "Led a team of 5 translators",
+            "Main client: McKinsey & Company (10+ years)",
+            "Produced 700-page research reports and consulting deliverables",
+            "Maintained bilingual glossaries and style guides",
+            "Introduced cloud translation tools (Memsource/Phrase)",
+            "Quality assurance and deadline management"
+          ]
+        }
       },
       {
         "year": "2023",
         "title": "Dev Support at PointGroup",
         "location": "Remote (web3)",
-        "description": "Switched to tech. Now I write docs, build VitePress and Gitbook sites, prepare grant applications, and record demo videos for a Swiss web3 company."
+        "description": "Switched to tech. Now I write docs, build VitePress and Gitbook sites, prepare grant applications, and record demo videos for a Swiss web3 company.",
+        "details": {
+          "company": "PointGroup AG (Switzerland)",
+          "period": "2023 – present",
+          "bullets": [
+            "Technical documentation for blockchain products (JPool, Alula, SVT)",
+            "Built and deployed doc sites with VitePress and Gitbook",
+            "Grant applications to Solana Foundation and other Web3 funds",
+            "Investor decks, one-pagers, and project descriptions",
+            "Demo videos and tutorials (recording, editing, publishing)",
+            "Google Play app listings and metadata management",
+            "Notion workspace setup for team task tracking"
+          ]
+        }
       }
     ]
   },
