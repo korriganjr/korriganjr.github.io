@@ -112,6 +112,11 @@
         "description": "I write and edit the text inside your product — button labels, error messages, onboarding flows, empty states, tooltips."
       },
       {
+        "icon": "globe",
+        "title": "Localization",
+        "description": "I localize between English and Russian myself, and manage localization into other languages — AI-assisted drafts finalized by native-speaking reviewers."
+      },
+      {
         "icon": "award",
         "title": "Grant Applications",
         "description": "I produce grant proposals and deliver the milestones foundations require — documentation, videos, technical scope. Contributed to $300K+ in grants won from Solana, Stellar, Internet Computer, and other foundations."
