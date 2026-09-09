@@ -1,7 +1,7 @@
 {
   "lang": "en",
   "meta": {
-    "title": "Vladimir Koryagin | Technical Writer & Project Support",
+    "title": "Vladimir Koryagin | Technical Writer & Dev Support Specialist",
     "description": "Documentation, grants, video, and dev support for tech companies."
   },
   "nav": {
@@ -13,21 +13,22 @@
   },
   "hero": {
     "name": "Vladimir Koryagin",
-    "subtitle": "Technical Writer & Project Support",
-    "description": "I take care of documentation, grant applications, investor decks, video production, and other non-code tasks so your dev team can focus on building. Open to part-time and project-based work.",
-    "cta": "Write on Telegram"
+    "subtitle": "Technical Writer & Dev Support Specialist",
+    "description": "I make what you're building clear to everyone outside your dev team — investors, users, foundations. A native Russian speaker with excellent English, I embed with your engineers and handle the writing-heavy work: documentation first, then investor decks, grant applications, and video. Open to part-time and project-based work.",
+    "cta": "Message me on Telegram"
   },
   "story": {
     "heading": "My Story",
+    "lead": "Several times I've had to master an entirely new field — and each time I did. Interpreting for PepsiCo/Wimm-Bill-Dann boardrooms and McKinsey engagements, and now 3+ years of technical work in web3. I bring real expertise today, plus a proven track record of learning fast whatever comes next.",
     "milestones": [
       {
         "year": "2005",
         "title": "Translator",
         "location": "Ivanovo",
-        "description": "Graduated in philology. Started out translating technical, legal, and marketing texts between Russian and English.",
+        "description": "Graduated from the Department of Romance and Germanic Languages. Started out translating technical, legal, and marketing texts between Russian and English.",
         "details": {
           "company": "Freelance / Local agencies",
-          "period": "2005 – 2010",
+          "period": "2005–2010",
           "bullets": [
             "Translated technical manuals, legal contracts, and marketing copy (RU ↔ EN)",
             "Worked with local and international clients across industries",
@@ -41,13 +42,12 @@
         "location": "Moscow",
         "description": "Moved to Moscow. Did simultaneous and consecutive interpreting at board meetings, investor visits, and consulting sessions.",
         "details": {
-          "company": "Wimm-Bill-Dann / PepsiCo, McKinsey & Company",
-          "period": "2010 – 2012",
+          "company": "Wimm-Bill-Dann/PepsiCo, McKinsey & Company",
+          "period": "2010–2012",
           "bullets": [
-            "Simultaneous and consecutive interpreting at C-level meetings",
-            "Board meetings, investor visits, and consulting workshops",
+            "Simultaneous and consecutive interpreting at C-level meetings, board sessions, and investor visits",
             "Worked on-site at Wimm-Bill-Dann during PepsiCo acquisition",
-            "Interpreted for McKinsey consulting teams in client engagements"
+            "Interpreted for McKinsey consulting teams in client engagements, including international trips"
           ]
         }
       },
@@ -55,36 +55,38 @@
         "year": "2012",
         "title": "Team Lead & Senior Translator",
         "location": "Moscow, Krasnodar",
-        "description": "Ran a translation team for 10+ years. McKinsey was the main client. Wrote 700-page research reports, maintained glossaries, brought in cloud translation tools.",
+        "description": "Ran a translation team for 10+ years with McKinsey as the main client. Translated engagement documents, compiled research reports, maintained glossaries and brought in cloud translation tools.",
         "details": {
-          "company": "Janus Translation Bureau",
-          "period": "2012 – 2023",
+          "company": "ELS Translation Bureau",
+          "period": "2012–2023",
           "bullets": [
             "Led a team of 5 translators",
-            "Main client: McKinsey & Company (10+ years)",
-            "Produced 700-page research reports and consulting deliverables",
+            "Main client: McKinsey & Company (10+ years); other clients: Thales Group, JTI, Mars, Heineken, etc.",
+            "Managed the team's translation, proofreading, and editing workflows",
+            "Personally translated, proofread, and edited documents alongside the team",
+            "Compiled and rewrote extensive research reports (up to 700 pages) for McKinsey",
             "Maintained bilingual glossaries and style guides",
-            "Introduced cloud translation tools (Memsource/Phrase)",
-            "Quality assurance and deadline management"
+            "Implemented cloud translation tools (Memsource/Phrase)",
+            "Ran QA checks and managed deadlines"
           ]
         }
       },
       {
         "year": "2023",
         "title": "Dev Support at PointGroup",
-        "location": "Remote (web3)",
-        "description": "Switched to tech. Now I write docs, build VitePress and Gitbook sites, prepare grant applications, and record demo videos for a Swiss web3 company.",
+        "location": "Remote (Web3)",
+        "description": "Switched to tech. Working as part of a dev team at a European Web3 company, writing docs, building doc sites, handling grant applications, communicating with foundations, and recording videos.",
         "details": {
           "company": "PointGroup AG (Switzerland)",
-          "period": "2023 – present",
+          "period": "2023–present",
           "bullets": [
-            "Technical documentation for blockchain products (JPool, Alula, SVT)",
-            "Built and deployed doc sites with VitePress and Gitbook",
-            "Grant applications to Solana Foundation and other Web3 funds",
-            "Investor decks, one-pagers, and project descriptions",
-            "Demo videos and tutorials (recording, editing, publishing)",
-            "Google Play app listings and metadata management",
-            "Notion workspace setup for team task tracking"
+            "Write technical documentation for Web3 projects (JPool, Alula, SVT)",
+            "Build and deploy doc sites with SSG engines (e.g., VitePress) and GitBook",
+            "Handle grant applications and communications with Web3 foundations (e.g., Solana Foundation, Stellar, Internet Computer)",
+            "Create investor decks, event pitches, one-pagers, and other materials",
+            "Produce and publish demo videos and tutorials",
+            "Prepare Google Play app listings and metadata management",
+            "Organize and maintain team task tracking and project data rooms in Notion"
           ]
         }
       }
@@ -92,37 +94,42 @@
   },
   "skills": {
     "heading": "What I Do",
-    "lead": "Everything a dev company needs besides writing code",
+    "lead": "Everything a dev company needs besides writing code.",
     "items": [
+      {
+        "icon": "users",
+        "title": "Embedded into Dev Teams",
+        "description": "I work directly with developers. Comfortable with sprints, Git workflows, and async communication. I keep up with sprint pace and tight deadlines."
+      },
       {
         "icon": "file-text",
         "title": "Technical Documentation",
-        "description": "I write and maintain docs, then deploy them with VitePress, Gitbook, or other static site generators."
+        "description": "I write and deploy docs with SSG engines (VitePress, Sphinx, Jekyll, etc.) or doc-hosting services like GitBook."
       },
       {
         "icon": "award",
         "title": "Grant Applications",
-        "description": "Finding Web3 funds, preparing the paperwork, talking to foundations, keeping track of deadlines."
+        "description": "I produce grant proposals and deliver the milestones foundations require — documentation, videos, technical scope. Contributed to $300K+ in grants won from Solana, Stellar, Internet Computer, and other foundations."
       },
       {
         "icon": "presentation",
         "title": "Investor Materials",
-        "description": "Pitch decks, one-pagers, project blurbs, investor letters."
+        "description": "Pitch decks, one-pagers, project blurbs, investor letters, data rooms."
       },
       {
         "icon": "git-branch",
         "title": "Technical Diagrams",
-        "description": "Architecture diagrams, flowcharts, and other visuals that explain how things work."
+        "description": "I draw architecture diagrams, flowcharts, and system overviews."
       },
       {
         "icon": "video",
         "title": "Video Production",
-        "description": "Tutorials, grant demos, product walkthroughs. I handle recording, editing, and publishing."
+        "description": "I record and edit tutorial videos, grant demos, and product walkthroughs with motion graphics."
       },
       {
         "icon": "pen-tool",
         "title": "Blog & Social Media",
-        "description": "Posts for company blogs, Twitter/X threads, community channels."
+        "description": "I write and edit posts for company blogs, Twitter/X threads, community channels."
       },
       {
         "icon": "smartphone",
@@ -132,52 +139,36 @@
       {
         "icon": "layout",
         "title": "CRM & Task Trackers",
-        "description": "I set up Notion workspaces, configure Jira boards, and keep them organized."
+        "description": "Workspaces and boards: setup and day-to-day maintenance."
       },
       {
         "icon": "code",
         "title": "Prototyping & Low-Code",
-        "description": "Landing pages, internal tools, quick prototypes. Astro, Tailwind, that kind of stack."
+        "description": "Landing pages, internal tools, quick prototypes."
       }
     ]
   },
   "tools": {
-    "heading": "Tools I Use",
-    "primary": ["Claude Code", "Notion", "VitePress", "Figma", "Git", "VS Code"],
+    "heading": "Examples of Tools I Use",
+    "primary": ["VS Code", "Git", "Notion", "Draw.io", "Figma", "AI tools"],
     "showAll": "Show full toolkit",
     "hideAll": "Hide full toolkit",
     "categories": [
       {
-        "name": "AI Coding",
-        "items": ["Claude Code"]
-      },
-      {
-        "name": "AI General",
-        "items": ["ChatGPT", "Gemini"]
-      },
-      {
-        "name": "AI Graphics",
-        "items": ["Nano Banana"]
-      },
-      {
-        "name": "AI Video",
-        "items": ["Veo", "Sora"]
+        "name": "AI",
+        "items": ["Claude Code", "ChatGPT", "Gemini", "Nano Banana", "Veo", "Sora"]
       },
       {
         "name": "Graphics",
-        "items": ["Figma", "Photoshop", "Draw.io", "Mermaid"]
+        "items": ["Figma", "Photoshop", "Draw.io", "Mermaid", "PlantUML"]
       },
       {
-        "name": "Video",
-        "items": ["Vegas Pro", "OBS Studio"]
-      },
-      {
-        "name": "Audio",
-        "items": ["Audacity", "Ableton"]
+        "name": "Video & Audio",
+        "items": ["DaVinci Resolve", "Vegas Pro", "OBS Studio", "Ableton"]
       },
       {
         "name": "SSG & Frameworks",
-        "items": ["VitePress", "Sphinx", "Jekyll", "YFM Builder", "Astro + Tailwind"]
+        "items": ["VitePress", "Sphinx", "Jekyll", "YFM Builder", "Astro + Tailwind", "Others"]
       },
       {
         "name": "General Tech",
@@ -193,26 +184,32 @@
     "heading": "Projects",
     "items": [
       {
-        "title": "JPool Documentation",
-        "description": "Docs for JPool liquid staking on Solana. Built with VitePress.",
+        "title": "JPool Docs",
+        "description": "Docs for the JPool liquid staking pool (Solana).",
         "url": "https://docs.jpool.one",
         "tag": "VitePress"
       },
       {
-        "title": "Alula Finance Docs",
-        "description": "Documentation for the Alula Finance DeFi protocol.",
+        "title": "Alula Docs",
+        "description": "Documentation for the Alula Finance lending protocol (Stellar).",
         "url": "https://docs.alula.finance",
         "tag": "VitePress"
       },
       {
-        "title": "SVT Documentation",
-        "description": "Developer docs for SVT blockchain infrastructure.",
+        "title": "Ignition Docs",
+        "description": "Docs for the Ignition liquid staking pool (Fogo).",
+        "url": "https://docs.ignitionfi.xyz",
+        "tag": "VitePress"
+      },
+      {
+        "title": "SVT Docs (old)",
+        "description": "Developer docs for the SVT blockchain infrastructure (Solana).",
         "url": "https://docs.svt.one",
-        "tag": "Gitbook"
+        "tag": "GitBook"
       },
       {
         "title": "Videos",
-        "description": "Tutorial videos, and product walkthroughs.",
+        "description": "JPool tutorials and walkthroughs.",
         "url": "https://www.youtube.com/@jpoolsolana",
         "tag": "Video"
       },
@@ -224,7 +221,7 @@
       },
       {
         "title": "Solana Campus",
-        "description": "Educational platform for the Solana ecosystem.",
+        "description": "Educational platform (Solana).",
         "url": "https://campus.jpool.one",
         "tag": "Education"
       }

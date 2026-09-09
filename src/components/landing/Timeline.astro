@@ -4,17 +4,25 @@ interface Props {
 }
 const { t } = Astro.props;
 const milestones = t.story.milestones;
+const detailsLabel = t.lang === 'ru' ? 'Подробнее' : 'Details';
+const backLabel = t.lang === 'ru' ? 'Назад' : 'Back';
 ---
 
 <section class="bg-secondary/30 py-20 lg:py-28" id="story">
   <div class="mx-auto max-w-4xl px-6">
-    <h2 class="reveal font-display mb-16 text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+    <h2 class="reveal font-display mb-4 text-center text-3xl font-bold tracking-tight text-foreground md:text-4xl">
       {t.story.heading}
     </h2>
+    {t.story.lead && (
+      <p class="reveal mx-auto mb-16 max-w-2xl text-center text-lg text-foreground-muted">
+        {t.story.lead}
+      </p>
+    )}
 
     <div class="relative" id="timeline-container">
-      <!-- Vertical line (scroll-driven) -->
+      <!-- Vertical line (background track) -->
       <div class="absolute left-4 top-0 hidden h-full w-0.5 bg-border/30 md:left-1/2 md:-ml-px md:block" aria-hidden="true"></div>
+      <!-- Vertical line (scroll-driven fill) -->
       <div id="timeline-line" class="absolute left-4 top-0 hidden w-0.5 bg-brand-500 md:left-1/2 md:-ml-px md:block transition-[height] duration-100" style="height:0%" aria-hidden="true"></div>
 
       <div class="space-y-12">
@@ -30,42 +38,55 @@ const milestones = t.story.milestones;
               </span>
             </div>
 
-            <!-- Card -->
+            <!-- Flip container -->
             <div class:list={[
-              'reveal reveal-delay-1 timeline-card ml-12 rounded-xl border border-border bg-background p-6 shadow-sm md:ml-0 md:w-5/12',
-              i % 2 === 0 ? 'md:mr-auto md:pr-12' : 'md:ml-auto md:pl-12',
+              'reveal reveal-delay-1 flip-container ml-12 md:ml-0 md:w-5/12 cursor-pointer',
+              i % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto',
             ]}>
-              <h3 class="text-lg font-semibold text-foreground">{m.title}</h3>
-              <p class="mt-1 text-sm text-brand-500">{m.location}</p>
-              <p class="mt-3 text-sm leading-relaxed text-foreground-muted">{m.description}</p>
-
-              {m.details && (
-                <button
-                  type="button"
-                  class="timeline-toggle mt-3 flex items-center gap-1 text-sm font-medium text-brand-500 hover:text-brand-600 transition-colors cursor-pointer"
-                  aria-expanded="false"
-                >
-                  <svg class="timeline-chevron h-4 w-4 transition-transform duration-200" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                  <span class="timeline-toggle-text">{t.lang === 'ru' ? 'Подробнее' : 'Details'}</span>
-                </button>
-
-                <div class="timeline-details mt-4 border-t border-border pt-4 grid grid-rows-[0fr] opacity-0 transition-[grid-template-rows,opacity] duration-300 ease-in-out">
-                  <div class="overflow-hidden">
-                  <p class="text-sm font-medium text-foreground">{m.details.company}</p>
-                  <p class="text-xs text-foreground-muted mb-3">{m.details.period}</p>
-                  <ul class="space-y-1.5">
-                    {m.details.bullets.map((b: string) => (
-                      <li class="flex items-start gap-2 text-sm text-foreground-muted">
-                        <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden="true"></span>
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                  </div>
+              <div class="flip-inner">
+                {/* ---- FRONT ---- */}
+                <div class:list={[
+                  'flip-front rounded-xl border border-border bg-background p-6 shadow-sm',
+                  i % 2 === 0 ? 'md:pr-12' : 'md:pl-12',
+                ]}>
+                  <h3 class="text-lg font-semibold text-foreground">{m.title}</h3>
+                  <p class="mt-1 text-sm text-brand-500">{m.location}</p>
+                  <p class="mt-3 text-sm leading-relaxed text-foreground-muted">{m.description}</p>
+                  {m.details && (
+                    <p class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-brand-500">
+                      {detailsLabel}
+                      <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </p>
+                  )}
                 </div>
-              )}
+
+                {/* ---- BACK ---- */}
+                {m.details && (
+                  <div class:list={[
+                    'flip-back rounded-xl border border-brand-500/30 bg-background p-6 shadow-sm',
+                    i % 2 === 0 ? 'md:pr-12' : 'md:pl-12',
+                  ]}>
+                    <div class="flex items-center gap-2 mb-1">
+                      <span class="rounded-full bg-brand-500 px-2.5 py-0.5 text-xs font-bold text-white">{m.year}</span>
+                      <h3 class="text-base font-bold text-foreground">{m.title}</h3>
+                    </div>
+                    <p class="text-sm font-medium text-foreground">{m.details.company}</p>
+                    <p class="text-xs text-foreground-muted mb-3">{m.details.period}</p>
+                    <ul class="space-y-1.5 mb-4">
+                      {m.details.bullets.map((b: string) => (
+                        <li class="flex items-start gap-2 text-sm text-foreground-muted">
+                          <span class="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" aria-hidden="true"></span>
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                    <p class="inline-flex items-center gap-1 text-sm font-medium text-brand-500">
+                      <svg class="h-4 w-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                      {backLabel}
+                    </p>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         ))}
@@ -74,34 +95,60 @@ const milestones = t.story.milestones;
   </div>
 </section>
 
+<style>
+  .flip-container {
+    perspective: 1200px;
+  }
+  .flip-inner {
+    position: relative;
+    transition: transform 0.6s ease-in-out, height 0.6s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .flip-container.is-flipped .flip-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-front,
+  .flip-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  .flip-front {
+    position: relative;
+  }
+  .flip-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: rotateY(180deg);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .flip-inner { transition: none; }
+  }
+</style>
+
 <script>
-  function initTimelineToggles() {
-    document.querySelectorAll('.timeline-toggle').forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const card = btn.closest('.timeline-card');
-        if (!card) return;
-        const details = card.querySelector('.timeline-details') as HTMLElement | null;
-        const chevron = btn.querySelector('.timeline-chevron') as HTMLElement | null;
-        if (!details) return;
+  function initFlipCards() {
+    document.querySelectorAll('.flip-container').forEach((container) => {
+      const inner = container.querySelector('.flip-inner') as HTMLElement;
+      const front = container.querySelector('.flip-front') as HTMLElement;
+      const back = container.querySelector('.flip-back') as HTMLElement;
+      if (!inner || !front) return;
 
-        const isOpen = details.classList.contains('grid-rows-[1fr]');
+      // Set initial height to front
+      inner.style.height = front.scrollHeight + 'px';
 
-        if (isOpen) {
-          details.classList.remove('grid-rows-[1fr]', 'opacity-100');
-          details.classList.add('grid-rows-[0fr]', 'opacity-0');
-        } else {
-          details.classList.remove('grid-rows-[0fr]', 'opacity-0');
-          details.classList.add('grid-rows-[1fr]', 'opacity-100');
-        }
+      container.addEventListener('click', () => {
+        const flipping = !container.classList.contains('is-flipped');
+        container.classList.toggle('is-flipped');
 
-        btn.setAttribute('aria-expanded', String(!isOpen));
-        if (chevron) {
-          chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
-        }
+        // Transition height to the target face
+        const target = flipping && back ? back : front;
+        inner.style.height = target.scrollHeight + 'px';
       });
     });
   }
-
-  initTimelineToggles();
-  document.addEventListener('astro:after-swap', initTimelineToggles);
+  initFlipCards();
+  document.addEventListener('astro:after-swap', initFlipCards);
 </script>
