@@ -14,7 +14,7 @@
   "hero": {
     "name": "Vladimir Koryagin",
     "subtitle": "Technical Writer & Dev Support Specialist",
-    "description": "I make what you're building clear to everyone outside your dev team — investors, users, foundations. A native Russian speaker with excellent English, I embed with your engineers and handle the writing-heavy work: documentation first, then investor decks, grant applications, and video. Open to part-time and project-based work.",
+    "description": "I make what you're building clear to everyone outside your dev team — investors, users, foundations. Native Russian, professional English. I embed with your engineers and handle the writing: docs first, then investor decks, grants, and more. Open to part-time and project-based work.",
     "cta": "Message me on Telegram"
   },
   "story": {
@@ -105,6 +105,11 @@
         "icon": "file-text",
         "title": "Technical Documentation",
         "description": "I write and deploy docs with SSG engines (VitePress, Sphinx, Jekyll, etc.) or doc-hosting services like GitBook."
+      },
+      {
+        "icon": "edit",
+        "title": "UX Writing & Microcopy",
+        "description": "I write and edit the text inside your product — button labels, error messages, onboarding flows, empty states, tooltips."
       },
       {
         "icon": "award",
