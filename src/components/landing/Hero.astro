@@ -4,8 +4,9 @@ import Icon from '@/components/ui/primitives/Icon/Icon.astro';
 
 interface Props {
   t: any;
+  locale?: string;
 }
-const { t } = Astro.props;
+const { t, locale } = Astro.props;
 ---
 
 <section class="relative overflow-hidden py-16 lg:py-24" id="hero">
@@ -37,8 +38,16 @@ const { t } = Astro.props;
           href={`mailto:${t.contact.email}`}
         >
           <Icon name="mail" size="sm" />
-          Email
+          {t.hero.email}
         </Button>
+        {
+          locale === 'ru' && (
+            <Button size="lg" variant="outline" href="/cv.pdf" download>
+              <Icon name="download" size="sm" />
+              {t.hero.downloadCv}
+            </Button>
+          )
+        }
       </div>
     </div>
 
