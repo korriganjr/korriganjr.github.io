@@ -14,7 +14,7 @@
   "hero": {
     "name": "Vladimir Koryagin",
     "subtitle": "Technical Writer · professional-grade English and Russian documentation",
-    "description": "I make what you're building clear to everyone outside your dev team — investors, users, foundations. Native Russian, professional English. I embed with your engineers and handle the writing: docs first, then investor decks, grants, and more. Open to part-time and project-based work.",
+    "description": "I make what you're building clear to everyone who needs to get it — from your engineers and users to investors and foundations. Native Russian, professional English, sharpened by years of translation and interpreting for McKinsey and others. I can write directly in English, for English-speaking audiences. I embed with an engineering team and handle product docs first, then pitchdecks, grants, UI and more.",
     "cta": "Message me on Telegram"
   },
   "story": {
@@ -24,10 +24,10 @@
       {
         "year": "2005",
         "title": "Translator",
-        "location": "Ivanovo, Moscow",
+        "location": "Ivanovo, Moscow (office and remote)",
         "description": "Graduated from the Department of Romance and Germanic Languages. Started out translating technical, legal, and marketing texts between Russian and English.",
         "details": {
-          "company": "Freelance / Russian agencies",
+          "company": "Freelance / Russian translation agencies",
           "period": "2005–2010",
           "bullets": [
             "Translated technical and legal documentation and marketing materials (RU ↔ EN)",
@@ -41,7 +41,7 @@
       {
         "year": "2010",
         "title": "Translator & Interpreter at Wimm-Bill-Dann & McKinsey",
-        "location": "Moscow",
+        "location": "Moscow (office)",
         "description": "Moved to Moscow. Beyond written translation, did interpreting at board meetings, investor visits, and consulting sessions.",
         "details": {
           "company": "Wimm-Bill-Dann/PepsiCo, McKinsey & Company",
@@ -58,8 +58,8 @@
       {
         "year": "2012",
         "title": "Team Lead & Senior Translator",
-        "location": "Moscow, Krasnodar",
-        "description": "Ran a translation team for 10+ years with McKinsey as the main client. Translated engagement documents, compiled research reports (GOST 7.32), maintained glossaries, and brought in cloud translation tools.",
+        "location": "Krasnodar (remote)",
+        "description": "Ran a translation team for 10+ years with McKinsey as the key direct client. Translated engagement documents, compiled research reports (GOST 7.32), maintained glossaries, and brought in cloud translation tools.",
         "details": {
           "company": "ELS Translation Bureau",
           "period": "2012–2023",
@@ -78,13 +78,13 @@
       {
         "year": "2023",
         "title": "Dev Support at PointGroup",
-        "location": "Remote (Web3)",
+        "location": "Krasnodar (remote)",
         "description": "Switched to tech. Working as part of a dev team at a European Web3 company, writing docs, building doc sites, handling grant applications, communicating with foundations, and recording videos.",
         "details": {
-          "company": "PointGroup AG (Switzerland)",
+          "company": "PointGroup AG (Europe)",
           "period": "2023–present",
           "bullets": [
-            "Write technical documentation for Web3 projects (JPool, Alula, SVT)",
+            "Write technical documentation for Web3 projects (JPool, Alula, Ignition, Vortum, JPool Validator Dashboard, SVT, Albus)",
             "Build and deploy doc sites with SSG engines (e.g., VitePress) and GitBook",
             "Handle grant applications and communications with Web3 foundations (e.g., Solana Foundation, Stellar, Internet Computer)",
             "Create investor decks, event pitches, one-pagers, and other materials",
@@ -97,7 +97,7 @@
     ]
   },
   "skills": {
-    "heading": "What I Do",
+    "heading": "What I Can Do",
     "lead": "Everything a dev team needs besides writing code.",
     "items": [
       {
@@ -133,7 +133,7 @@
       {
         "icon": "git-branch",
         "title": "Technical Diagrams",
-        "description": "I draw architecture diagrams, flowcharts, and system overviews."
+        "description": "I draw architecture diagrams, flowcharts, and system overviews (including UML)."
       },
       {
         "icon": "video",
@@ -144,21 +144,6 @@
         "icon": "pen-tool",
         "title": "Blog & Social Media",
         "description": "I write and edit posts for company blogs, Twitter/X threads, community channels."
-      },
-      {
-        "icon": "smartphone",
-        "title": "App Store Management",
-        "description": "Google Play listings: descriptions, screenshots, metadata, updates."
-      },
-      {
-        "icon": "layout",
-        "title": "CRM & Task Trackers",
-        "description": "Workspaces and boards: setup and day-to-day maintenance."
-      },
-      {
-        "icon": "code",
-        "title": "Prototyping & Low-Code",
-        "description": "Landing pages, internal tools, quick prototypes."
       }
     ]
   },
@@ -216,7 +201,7 @@
         "tag": "VitePress"
       },
       {
-        "title": "SVT Docs (old)",
+        "title": "SVT Docs",
         "description": "Developer docs for the SVT blockchain infrastructure (Solana).",
         "url": "https://docs.svt.one",
         "tag": "GitBook"
@@ -228,12 +213,6 @@
         "tag": "Video"
       },
       {
-        "title": "This Website",
-        "description": "Personal portfolio built with Astro and Tailwind CSS.",
-        "url": "https://korriganjr.github.io",
-        "tag": "Astro"
-      },
-      {
         "title": "Solana Campus",
         "description": "Educational platform (Solana).",
         "url": "https://campus.jpool.one",
@@ -243,7 +222,6 @@
   },
   "contact": {
     "heading": "Get in Touch",
-    "description": "Open to part-time and project-based work. Pick any channel.",
     "email": "vladimir.koryagin7@gmail.com",
     "telegram": "@korrigan_jr",
     "telegramUrl": "https://t.me/korrigan_jr",
