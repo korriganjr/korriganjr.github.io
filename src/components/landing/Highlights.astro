@@ -1,0 +1,24 @@
+---
+interface Props {
+  t: any;
+}
+const { t } = Astro.props;
+---
+
+<section class="py-12 lg:py-16" id="highlights">
+  <div class="mx-auto max-w-6xl px-6">
+    <h2 class="sr-only">{t.highlights.heading}</h2>
+
+    <div class="grid grid-cols-2 gap-6 lg:grid-cols-4">
+      {t.highlights.items.map((item: any, i: number) => (
+        <div class:list={[
+          'reveal rounded-xl border border-border bg-background p-6 text-center shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1',
+          `reveal-delay-${(i % 3) + 1}`,
+        ]}>
+          <div class="font-display text-3xl font-regular text-brand-500 md:text-4xl">{item.value}</div>
+          <p class="mt-2 text-sm leading-relaxed text-foreground-muted">{item.label}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

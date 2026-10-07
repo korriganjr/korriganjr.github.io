@@ -19,6 +19,15 @@
     "email": "Email",
     "downloadCv": "CV"
   },
+  "highlights": {
+    "heading": "At a Glance",
+    "items": [
+      { "value": "$300K+", "label": "in grants won — every milestone delivered and paid" },
+      { "value": "5", "label": "documentation sites built from scratch" },
+      { "value": "3+", "label": "years as a technical writer" },
+      { "value": "1", "label": "month from entering Web3 to first live site" }
+    ]
+  },
   "story": {
     "heading": "My Story",
     "lead": "Several times I've had to master an entirely new field — and each time I did. Interpreting for PepsiCo/Wimm-Bill-Dann boardrooms and McKinsey engagements, and now 3+ years of technical work in Web3. I bring real expertise today, plus a proven track record of learning fast whatever comes next.",
@@ -61,18 +70,18 @@
         "year": "2012",
         "title": "Team Lead & Senior Translator",
         "location": "Krasnodar (remote)",
-        "description": "Ran a translation team for 10+ years with McKinsey as the key direct client. Translated engagement documents, compiled research reports (GOST 7.32), maintained glossaries, and brought in cloud translation tools.",
+        "description": "Ran a translation team for 10+ years with McKinsey as the key direct client. Translated engagement documents, compiled research reports (GOST 7.32), maintained glossaries, and moved the team onto CAT tools.",
         "details": {
           "company": "ELS Translation Bureau",
           "period": "2012–2023",
           "bullets": [
-            "Led an in-house team of translators and editors; brought in freelancers for specific projects",
+            "Led language support: 5–7 in-house plus 10–20 freelancers brought in for specific projects",
             "Main client: McKinsey & Company (10+ years); other clients: Thales Group, JTI, Mars, Heineken, etc.",
             "Managed the team's translation, proofreading, and editing workflows",
             "Personally translated, proofread, and edited documents alongside the team",
-            "Compiled and rewrote extensive research reports to GOST 7.32 for McKinsey (up to 700 pages)",
+            "Sole owner of extensive GOST 7.32 research reports for McKinsey (up to 700 pages): compiled them from scattered sources and led the team on these projects",
             "Maintained glossaries and style guides",
-            "Implemented cloud translation tools",
+            "Moved the team onto CAT tools (translation memories, termbases) instead of translating by hand in Word and PowerPoint",
             "Ran QA checks and managed deadlines"
           ]
         }
@@ -81,7 +90,7 @@
         "year": "2023",
         "title": "Dev Support at PointGroup",
         "location": "Krasnodar (remote)",
-        "description": "Switched to tech. Working as part of a dev team at a European Web3 company, writing docs, building doc sites, handling grant applications, communicating with foundations, and recording videos.",
+        "description": "Switched to tech. Working as part of a dev team at a European Web3 company. Came into Web3 from scratch and built the company's documentation — there was none before me.",
         "details": {
           "company": "PointGroup AG (Europe)",
           "period": "2023–present",
@@ -90,10 +99,10 @@
             "Write and edit in-product copy: button labels, error messages, onboarding, empty states, tooltips",
             "Handle localization: EN and RU myself; manage translation into other languages (AI draft, final edit by native speakers)",
             "Create technical diagrams and schematics (Draw.io, Mermaid, PlantUML)",
-            "Prepare documentation and close milestones for Web3 grant projects: applications, technical write-ups and diagrams, demo videos. Contributed to securing $300K+ in grants from Solana, Stellar, Internet Computer, and other foundations",
+            "Prepare documentation and close milestones for Web3 grant projects: applications, technical write-ups and diagrams, demo videos. On grant projects I handle everything but the code; every milestone was delivered and every grant paid out (Solana, Stellar, Internet Computer, and other foundations)",
             "Create investor materials (pitch decks, event presentations, one-pagers)",
             "Record and publish tutorial and demo videos for products",
-            "Prepare Google Play app listings and maintain their metadata",
+            "Took a mobile app all the way to publication on Google Play (did everything but the code); prepare listings and maintain their metadata",
             "Organize and maintain team task tracking and project data rooms in Notion",
             "Communicate with foundations and partners"
           ]
@@ -128,7 +137,7 @@
       {
         "icon": "award",
         "title": "Grant Applications",
-        "description": "I produce grant proposals and deliver the milestones foundations require — documentation, videos, technical scope. Contributed to $300K+ in grants won from Solana, Stellar, Internet Computer, and other foundations."
+        "description": "On grant projects I handle everything but the code: applications, technical write-ups and diagrams, demo videos, reports, and foundation comms. Every milestone delivered, every grant paid (Solana, Stellar, Internet Computer, and other foundations)."
       },
       {
         "icon": "presentation",
