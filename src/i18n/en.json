@@ -86,13 +86,16 @@
           "company": "PointGroup AG (Europe)",
           "period": "2023–present",
           "bullets": [
-            "Write technical documentation for Web3 projects (JPool, Alula, Ignition, Vortum, JPool Validator Dashboard, SVT, Albus)",
-            "Build and deploy doc sites with SSG engines (e.g., VitePress) and GitBook",
-            "Handle grant applications and communications with Web3 foundations (e.g., Solana Foundation, Stellar, Internet Computer)",
-            "Create investor decks, event pitches, one-pagers, and other materials",
-            "Produce and publish demo videos and tutorials",
-            "Prepare Google Play app listings and metadata management",
-            "Organize and maintain team task tracking and project data rooms in Notion"
+            "Write and deploy documentation based on Docs-as-Code using an SSG engine (VitePress) or GitBook for the company's Web3 projects (JPool, Alula, Ignition, Vortum, JPool Validator Dashboard, SVT, Albus, and others)",
+            "Write and edit in-product copy: button labels, error messages, onboarding, empty states, tooltips",
+            "Handle localization: EN and RU myself; manage translation into other languages (AI draft, final edit by native speakers)",
+            "Create technical diagrams and schematics (Draw.io, Mermaid, PlantUML)",
+            "Prepare documentation and close milestones for Web3 grant projects: applications, technical write-ups and diagrams, demo videos. Contributed to securing $300K+ in grants from Solana, Stellar, Internet Computer, and other foundations",
+            "Create investor materials (pitch decks, event presentations, one-pagers)",
+            "Record and publish tutorial and demo videos for products",
+            "Prepare Google Play app listings and maintain their metadata",
+            "Organize and maintain team task tracking and project data rooms in Notion",
+            "Communicate with foundations and partners"
           ]
         }
       }
